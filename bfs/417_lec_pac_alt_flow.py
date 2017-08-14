@@ -30,6 +30,7 @@ class Solution(object):
         self.bfs(res, matrix, queue, can_pac, can_atl)
 
         # process Atlantic
+        # 小心重复添加 bfs 初始元素
         # right
         for i in xrange(row):
             queue.append((i, col - 1))
