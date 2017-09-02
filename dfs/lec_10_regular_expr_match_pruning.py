@@ -33,6 +33,7 @@ class Solution(object):
                     return mem[idx_s][idx_p]
                 i += 1
             mem[idx_s][idx_p] = False
+
         return mem[idx_s][idx_p]
 
 
